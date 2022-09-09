@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Passion</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crave</title>
+    <style>
+      body {
+        background-color: black;
+      }
+      header {
+        position: fixed;
+        width: 100vw;
+        background-color: rgb(36, 33, 33);
+        margin: -10px;
+        filter: drop-shadow(0 10px 5px rgba(0, 0, 0, 0.276));
+      }
+      .logo {
+        display: flex;
+        justify-content: center;
+        font-weight: bold;
+        font-family: "Chonburi";
+        color: white;
+      }
+      nav {
+        display: flex;
+
+        justify-content: center;
+      }
+
+      ul {
+        list-style: none;
+        display: flex;
+
+        gap: 20px;
+        overflow-x: auto;
+      }
+      li {
+        align-self: center;
+        cursor: pointer;
+        padding-inline: 15px;
+        background-color: #928282;
+        font-family: "bungee";
+        color: white;
+      }
+
+      li:hover {
+        margin: -4px;
+        background-color: white;
+        color: #7a6868;
+        border: 4px solid #ad9999;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <div class="logo">
+        <h1>Crave</h1>
+      </div>
+
+      <nav>
+        <ul>
+          <li data-kategori="alle" class="valgt">Alle</li>
+          <li data-kategori="forretter">Forretter</li>
+          <li data-kategori="hovedretter">Hovedretter</li>
+          <li data-kategori="sideorders">Sideorders</li>
+          <li data-kategori="desserter">Desserter</li>
+          <li data-kategori="drikkevarer">Drikkevarer</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main><img src="/billeder/gin.jpg" width="400" /></main>
+  </body>
 </html>
