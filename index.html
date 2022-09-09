@@ -51,6 +51,23 @@
         color: #7a6868;
         border: 4px solid #ad9999;
       }
+
+      #section_gin {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 10px 1fr;
+        column-gap: 10px;
+      }
+
+      .billede_gin {
+        grid-row: 2/2;
+      }
+
+      .tekst_gin {
+        grid-column: 2/3;
+        grid-row: 3/3;
+        color: white;
+      }
     </style>
   </head>
 
@@ -72,6 +89,19 @@
       </nav>
     </header>
 
-    <main><img src="/billeder/gin.jpg" width="400" /></main>
+    <main>
+      <section>
+        <h2>Grundlæggende UX</h2>
+        <article id="section_gin">
+          <div class="tekst_gin">
+            <p>Tema 3's projekt gik ud på at lave en prototype på en webshop som skulle sælge t-shirts. Aller først skulle man finde et problem så man kunne lave et unikt produkt. Derefter begyndte med at lave noget research om forbrugeren. Jeg lavede et spørgeskema som jeg postede i en gruppe på facebook for at få noget kvantitativt data. Min ide var at folk skulle kunne returnere deres fodboldtrøjer hvis spilleren de havde haft bag på eventuelt havde skiftet klub. Ud fra den indsamlede data fra 255 personer fandt jeg frem til at 71,4% af de adspurgte var åbne for ideen om at kunne returnere en fodboldtrøje og få lavet nyt tryk.</p>
+          </div>
+
+          <div class="billede_gin">
+            <img src="/billeder/gin.jpg" width="400" />
+          </div>
+        </article>
+      </section>
+    </main>
   </body>
 </html>
